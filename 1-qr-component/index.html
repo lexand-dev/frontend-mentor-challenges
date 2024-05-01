@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        font-family: "Outfit Variable", sans-serif;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background-color: #d5e1ef;
+      }
+
+      /* outfit-latin-wght-normal */
+      @font-face {
+        font-family: "Outfit Variable";
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400 700;
+        src: url(@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2)
+          format("woff2-variations");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      .attribution {
+        font-size: 13px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .card {
+        width: 320px;
+        height: 497px;
+        padding: 16px;
+        border-radius: 16px;
+        background-color: white;
+        filter: drop-shadow(rgba(0, 0, 0, 0.219) 0px 25px 25px);
+      }
+      .card-img-qr {
+        width: 100%;
+        border-radius: 12px;
+      }
+
+      .card-info {
+        width: 100%;
+        padding: 16px 19px;
+        box-sizing: border-box;
+        & p {
+          color: #1f314f;
+          margin-top: 0;
+          font-size: 24px;
+          font-weight: 700;
+        }
+        & span {
+          color: #7d889e;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/lexand-dev" target="_blank"
+          >Alexander Flores</a
+        >.
+      </div>
+
+      <h1>QR Code</h1>
+
+      <article class="card">
+        <img class="card-img-qr" src="/images/image-qr-code.png" alt="" />
+        <div class="card-info">
+          <p>Improve yor front-end skills by building projects</p>
+          <span>
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </span>
+        </div>
+      </article>
+
+      <div id="app"></div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
